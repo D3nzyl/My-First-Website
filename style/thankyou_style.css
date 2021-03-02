@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Rajdhani|Bitter);
+
+/* container style */
+.thankyou_container {
+   border-radius: 1em;
+   background-color:rgba(80,80,80,0.5);
+   color: white;
+   padding: 10px;
+   
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 5em;
+   margin-top: 5em;
+   text-align: center;
+}

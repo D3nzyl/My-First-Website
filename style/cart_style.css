@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Rubik|Ramabhadra);
+
+/* Container styles */
+.cart_container {
+    border-radius: 1em;
+    background-color:rgba(200, 200, 200, .5);
+    color: black;
+    padding: 1em;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+}
+
+/* table style */
+.cartTable th:nth-child(1){width: 20%}
+.cartTable th:nth-child(2){width: 35%}
+.cartTable th:nth-child(3){width: 25%}
+.cartTable th:nth-child(4){width: 20%}
+
+.descSize {
+    font-size: 0.5em;
+}
+
+/* Button style */
+.checkout {
+    margin-left: 75%;
+    font-size: 0.5em;
+    padding: 0.7em; 
+    border: none;
+    background:  #ff4747;
+    color: white;
+    border-radius: 1em;
+    font-family: 'Rubik',sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.checkout:hover {
+    background-color: #a11f1f;
+    }
+
+/* web form style */
+.quantity {
+    width: 50%;
+    padding: 0.3em;
+    font-size: 0.5em;
+    text-align: center;
+    font-family: 'Ramabhadra', sans-serif;
+    border-radius: 1em;
+    border: solid 2px black;
+    cursor: pointer;
+}
+.quantity:hover {
+    background:rgba(255, 255, 255, 0.7) 
+}
+
+/* Accepted payments */
+.accept {
+    margin-top: 0.3em;
+    margin-left: 75%;
+    font-size: 1.5em;
+}
+
+.accept p{
+    font-size: 0.3em;
+}

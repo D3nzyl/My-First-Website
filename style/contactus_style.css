@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Gugi|Rubik);
+
+/* Address style */ 
+.address {
+  background-color: white;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 1em;
+  padding: 0.2em;
+  margin-top: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.title {
+  width: 25%;
+}
+
+/* Style inputs */
+
+.submit {
+  background-color: #ff4747;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1em;
+  margin-top: 1em;
+}
+
+.submit:hover {
+  background-color: #a11f1f;
+}
+
+textarea {
+  font-family: Comfortaa, sans-serif;
+  height: 10em;
+}
+
+/* Container style */
+.contactContainer {
+  border-radius: 1em;
+  background-color:rgba(80,80,80,0.5);
+  color: white;
+  padding: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottom_container {
+  margin: 1em;;
+  margin-top: 2em;
+}
+
+.feedback_container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+
+
+/* header style */
+.contact_header {
+  font-size: 3em;
+  font-family: 'Rubik', sans-serif;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+  margin-top: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Social style */
+.social_column {
+  float: left;
+  width: 25%;
+  font-size: 6em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+
+
+.logo_container {
+  color: white;
+}
+
+/* Map style */
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.map {
+  border: solid 1.2em white;
+}
+
+.map_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* grid style */
+div.col-1-2_left {
+  width: 50%;
+  border-right: solid 4px white; 
+}
+
+/* table style */
+.opening_hours {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px white;
+}
+
+.opening_hours td {
+  padding: 1em;
+}
+
+.opening_hours tr:hover {
+  background: gray;
+}
+
+.opening_hours tr:nth-child(odd) {
+  background: rgba(80,80,80,0.5);
+}
+
+.opening_hours tr:nth-child(odd):hover {
+  background: gray;
+}
+

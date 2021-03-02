@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Shoe Box - Ultra Boost</title>
+    <link href="../style/general.css" rel="stylesheet" />
+    <link href="../style/shoeshop_style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">                                    <!-- Creating the bootstrap container -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">  <!-- Creating the bootstrap navigation bar with some styling classes -->
+                <a class="nav-link" href="../index.html"><img class="img-fluid" src="../images/logo.png" alt="The Shoe Box" style="width:6em;"></a>  <!-- Creating the logo and setting the width at the left side of the bar -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">  <!-- Setting a drop downbar when device is too small-->
+                    <span class="navbar-toggler-icon"></span>                                                          <!-- Creating the hamburger button when the navbar collapse -->
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">                                              <!-- Creating the drop down bar -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="intrend.html">In Trend</a>           <!-- Setting the first nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="shop.html">Shop</a>                  <!-- Setting the second nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="about.html">About</a>                <!-- Setting the third nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="contactus.html">Contact Us</a>       <!-- Setting the forth nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="cart.html">Cart</a>                  <!-- Setting the fifth nav button -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr class="white_line" />
+
+        <div class="row">
+            <div class="desc_container"> <!-- Description Container -->
+                <div class="row">
+                    <p class="name">Ultra Boost</p> <!-- Name of shoe -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <img class="shoe_img img-thumbnail img-fluid" src="../images/ultraboost_sq.jpg" alt="Ultra Boost">
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="row">
+                            <p class="desc text-break"> <!-- Description -->
+                                Running reinvented. These high-performance neutral 
+                                running shoes deliver unrivaled comfort and energy 
+                                return. The lightweight and propulsive shoes have a 
+                                seamless knit upper that's engineered with motion 
+                                weave technology to provide stretch while also holding 
+                                your foot in place as you run. The second-skin fit 
+                                follows the shape of your foot to reduce pressure points.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p class="price">Price : $190.00</p> <!-- Price -->
+                        </div>
+                        <div class="row">
+                            <button class="add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer> <!-- Footer -->
+        Please sign up for our newsletter.
+        <div class="form"> <!-- Text box-->
+            <label class="email">Email:</label>
+            <input class="email2" placeholder="example@email.com"/>
+            <button class="submit2">Submit</button>
+        </div>
+    </footer>
+</body>
+
+</html>

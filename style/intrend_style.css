@@ -1,0 +1,268 @@
+/* Intrend card style */
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.5em;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    border: solid rgb(56, 56, 56) 4px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 1.3em;
+    margin-top: 0.3em;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 0.8em;
+    color:white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .shoename {
+    font-size: 1.5em;
+    margin-top: 0.2em;
+  }
+
+/* Div style */
+div.intrend_container {
+  clear: both;
+  margin-bottom: 5em;
+  margin-top: 0.8em;
+}
+
+div.intrend_container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* paragraph style */
+.desc {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+/* Images style */
+.intrend_img {
+  width: 100%
+}
+
+/*slide show style */
+.galleryContainer {
+  width: 100%;
+  height: 25em;
+  max-width: 1000px;
+  user-select: none;
+  box-shadow: 0px 0px 3px 1px #00000078;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center the box */
+}
+
+.galleryContainer .slideShowContainer {
+  widows: 100%;
+  height: 90%;
+  overflow: hidden;
+  background-color: gainsboro;
+  position: relative;
+}
+
+.galleryContainer .slideShowContainer .imageHolder { 
+  width: 100%;
+  height: 100%;
+  position: absolute;      /* stacking all the images over each other */
+  opacity: 0;              /* making all the images invisible */
+}
+
+.galleryContainer .slideShowContainer .imageHolder img { 
+  width: 100%;
+  height: 100%;
+} 
+
+.galleryContainer .slideShowContainer .imageHolder .captionText { 
+  display: none;
+}
+
+.galleryContainer .slideShowContainer .leftArrow, .galleryContainer .slideShowContainer .rightArrow {   /* arrow holder for left and right side */
+  width: 50px;
+  background: #00000036;   
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: #00000036 0.5s;
+  height: 72px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+.galleryContainer .slideShowContainer .rightArrow {   /* overriding the right arrow to flip the other side */
+  left: auto;
+  right: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+
+.galleryContainer .slideShowContainer .leftArrow:hover , .galleryContainer .slideShowContainer .rightArrow:hover {      /*hover effect */
+  background: #000000a8;
+  cursor: pointer;
+}
+
+.galleryContainer .slideShowContainer .arrow {
+  display: inline-block;          
+  border: 3px solid white;       /* creating a square */
+  width: 10px;
+  height: 10px;
+  border-left: none;          /* removing 2 sides to make a arrow */
+  border-bottom: none;
+  margin: auto;
+  position: absolute;
+  left: 0;      /* centering the arrow */
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.galleryContainer .slideShowContainer .arrow.arrowLeft {      /*rotating the arrow to point to the outside */
+  transform: rotatez(-135deg);
+}
+
+.galleryContainer .slideShowContainer .arrow.arrowRight {     /*rotating the arrow to point to the outside */
+  transform: rotatez(45deg);
+}
+
+.galleryContainer .slideShowContainer .captionHolder {        /*caption text style */
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  background: #00000047;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.galleryContainer .slideShowContainer .captionHolder>.captionText {
+  margin: 0;
+}
+
+/* Dots Style */
+.galleryContainer #dotsContainer {
+  width: 100%;            
+  height: 10%; 
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.galleryContainer #dotsContainer .dots {
+  display: inline-block;
+  width: 15px;           /* creating a square */
+  height: 15px;
+  border-radius: 50%;    /* making the square into a cirle/dot */
+  margin-left: 10px;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: #bbb 0.5s;
+}
+
+.galleryContainer #dotsContainer .dots:hover, .galleryContainer #dotsContainer .dots.active{  /* active is used when a slide is selected already */
+  background-color: #717171;   /* dots hovering colour */
+} 
+
+.galleryContainer #dotsContainer .dots:first-child {  /* removing the margin-left from first dot to make all the dots centered */
+  margin-left: 0;
+}
+
+.galleryContainer .moveLeftCurrentSlide {
+  animation-name: moveLeftCurrent;        /* moving the current slide to the left*/
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.galleryContainer .moveLeftNextSlide { 
+  animation-name: moveLeftNext;           /* moving the next slide from the left */
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveLeftCurrent {              /* animation for current slide sliding to the left */
+  from{
+    margin-left: 0;               
+    opacity: 1;
+  }
+  to {
+    margin-left: -100%;
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeftNext {                 /* animation for next slide sliding to the left */
+  from{
+    margin-left: 100%;
+    opacity: 1;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+.galleryContainer .moveRightCurrentSlide {
+  animation-name: moveRightCurrent;       /* moving the current slide to the right */         
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.galleryContainer .moveRightNextSlide {
+  animation-name: moveRightNext;         /* moving the next slide from the right */
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveRightCurrent {            /* animation for current slide sliding to the right */
+  from{
+    margin-left: 0;
+    opacity: 1;
+  }
+  to {
+    margin-left: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes moveRightNext {               /* animation for next slide sliding to the right */
+  from{
+    margin-left: -100%;
+    opacity: 1;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}

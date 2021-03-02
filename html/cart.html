@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Shoe Box - Cart</title>
+    <link href="../style/general.css" rel="stylesheet" />
+    <link href="../style/cart_style.css" rel="stylesheet" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">                                    <!-- Creating the bootstrap container -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">  <!-- Creating the bootstrap navigation bar with some styling classes -->
+                <a class="nav-link" href="../index.html"><img class="img-fluid" src="../images/logo.png" alt="The Shoe Box" style="width:6em;"></a>  <!-- Creating the logo and setting the width at the left side of the bar -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">  <!-- Setting a drop downbar when device is too small-->
+                    <span class="navbar-toggler-icon"></span>                                                          <!-- Creating the hamburger button when the navbar collapse -->
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">                                              <!-- Creating the drop down bar -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="intrend.html">In Trend</a>           <!-- Setting the first nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="shop.html">Shop</a>                  <!-- Setting the second nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="about.html">About</a>                <!-- Setting the third nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="contactus.html">Contact Us</a>       <!-- Setting the forth nav button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white bg-dark customNavbar" href="cart.html">Cart</a>                  <!-- Setting the fifth nav button -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr class="white_line" />
+
+        <div class="cart_container"> <!-- Cart Container-->
+            <table class="table table-hover table-responsive cartTable">  <!--Bootstrap Table-->
+                <thead class="thead-dark">
+                    <th scope = "col">Product</th>
+                    <th scope = "col">Description</th>
+                    <th scope = "col">Quantity</th>
+                    <th scope = "col">Price</th>
+                </thead>
+                <tr>
+                    <td><img class="img-thumbnail img-fluid" src="../images/intrend2.jpg" alt="Flyknit Air Max"></td>
+                    <td>
+                        <p class="font-weight-bolder">Flyknit Air Max</p>
+                        <p class="descSize">A bright and poping design, for those who dare. With a lightweight construction for maximum comfort.</p>
+                    </td>
+                    <td><input type="number" class="quantity" name="quantity" value="1" min="1"></td>
+                    <td><p class="font-weight-bolder">$120.00</p></td>
+                </tr>
+                <tr>
+                    <td><img class="img-thumbnail img-fluid" src="../images/intrend1.jpg" alt="Nike SB Youth Janoski"></td>
+                    <td>
+                        <p class="font-weight-bolder">Nike SB Youth Janoski</p>
+                        <p class="descSize">A retro but timeless design. With a lace-up closure for a snug fit, it's prefect for the everyday use.</p>
+                    </td>
+                    <td><input type="number" class="quantity" name="quantity" value="1" min="1"></td>
+                    <td><p class="font-weight-bolder">$89.00</p></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Total:</td>
+                    <td>2</td>
+                    <td><p class="font-weight-bolder">$209.00</p></td>
+                </tr>
+            </table>
+
+            <button onclick="window.location.href = 'checkout.html' " class="checkout">Continue to Checkout</button>
+            <div class="accept">
+                <p>We accept:</p> 
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+            </div>
+        </div>
+    </div>
+    
+    <footer> <!-- Footer -->
+        Please sign up for our newsletter.
+        <div class="form"> <!-- Text Box-->
+            <label class="email">Email:</label>
+            <input class="email2" placeholder="example@email.com"/>
+            <button class="submit2">Submit</button>
+        </div>
+    </footer>
+</body>
+
+</html>

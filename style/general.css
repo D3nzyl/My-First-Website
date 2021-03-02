@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Rubik|Comfortaa|Oxygen|Oswald);
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Page Body Styles */
+body {
+   width: 100%;
+   max-width: 1920px;
+   min-width: 640px;
+   font-family: 'Rubik', Arial, sans-serif;
+   background: url(../images/wallpaper.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.white_line { 
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+}
+
+/* Banner Styles */
+.banner {
+    padding-top: 1.5em;
+    padding-left: auto;
+    padding-right: auto;
+ }
+
+ .banner_border {
+   border: solid white;
+ }
+
+ /* Image Styles */
+img {
+    width: 100%;
+    display: block;
+ }
+
+ * {
+    box-sizing: border-box;
+  }
+
+ /* Footer Styles */
+footer {
+    width: 100%;
+    color: black;
+    font-family: Comfortaa, sans-serif;
+    background-image: linear-gradient(to bottom right, gray,white);
+    text-align: center;
+    height: 4em; 
+
+ }
+
+/* Text box in footer */
+.email2 {
+border-radius: 1em;
+margin-top: 0.2em;
+padding-left: 0.5em;
+padding-right: 0.5em;   
+}
+
+.submit2{
+background-color: #ff4747;
+width: 5em;
+border-radius: 1em;
+color: white;
+border: none;
+text-align: center;
+cursor: pointer;
+}
+
+.submit2:hover {
+background-color: #a11f1f;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: Comfortaa, sans-serif;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 1em;
+  }
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: Comfortaa, sans-serif;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 1em;
+}
+
+
+/* Custom margin & font size for Navbar */
+.customNavbar {
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  font-size: 1.2em;
+}

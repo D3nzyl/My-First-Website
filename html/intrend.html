@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Shoe Box - In Trend</title>
+    <link href="../style/intrend_style.css" rel="stylesheet" />
+    <link href="../style/general.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">                                    <!-- Creating the bootstrap container -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">  <!-- Creating the bootstrap navigation bar with some styling classes -->
+            <a class="nav-link" href="../index.html"><img class="img-fluid" src="../images/logo.png" alt="The Shoe Box" style="width:6em;"></a>  <!-- Creating the logo and setting the width at the left side of the bar -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">  <!-- Setting a drop downbar when device is too small-->
+                <span class="navbar-toggler-icon"></span>                                                          <!-- Creating the hamburger button when the navbar collapse -->
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">                                              <!-- Creating the drop down bar -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark customNavbar" href="intrend.html">In Trend</a>           <!-- Setting the first nav button -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark customNavbar" href="shop.html">Shop</a>                  <!-- Setting the second nav button -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark customNavbar" href="about.html">About</a>                <!-- Setting the third nav button -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark customNavbar" href="contactus.html">Contact Us</a>       <!-- Setting the forth nav button -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-dark customNavbar" href="cart.html">Cart</a>                  <!-- Setting the fifth nav button -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr class="white_line" />
+    
+    <!-- Slideshow container -->
+    <div class = "galleryContainer">
+        <div class = "slideShowContainer">
+            <div class="leftArrow" onclick="plusSlides(-1)"><span class="arrow arrowLeft"></span></div>  <!-- PlusSlide(1) for the javascript to add one to the current slide-->
+            <div class="rightArrow" onclick="plusSlides(1)"><span class="arrow arrowRight"></span></div> <!-- PlusSlide(1) for the javascript to add one to the current slide-->
+            <div class="captionHolder"><p class="captionText"></p></div>   <!-- Creating a caption holder to be replace by caption in the selected imageHolder-->
+
+            <div class= "imageHolder">                                     <!-- Creating of the imageHolder -->
+                <img class="img-fluid" src = "../images/pureboost.png">                      <!-- Setting the selected image for first imageHolder -->
+                <p class = "captionText">Pure Boost</p>                    <!-- Setting the caption for the image -->
+            </div>
+            <div class= "imageHolder">                                     <!-- Creating of the imageHolder -->
+                <img class="img-fluid" src = "../images/ultraboost.jpg">                     <!-- Setting the selected image for second imageHolder -->
+                <p class = "captionText">Ultra Boost</p>                   <!-- Setting the caption for the image -->
+            </div>
+            <div class= "imageHolder">                                     <!-- Creating of the imageHolder -->
+                <img class="img-fluid" src = "../images/yeezy.png">                          <!-- Setting the selected image for third imageHolder -->
+                <p class = "captionText">Yeezy Boost</p>                   <!-- Setting the caption for the image -->
+            </div>
+            <div class= "imageHolder">                                     <!-- Creating of the imageHolder -->
+                <img class="img-fluid" src = "../images/slideshow1.jpg">                     <!-- Setting the selected image for forth imageHolder -->
+                <p class = "captionText">New Canvas Shoe Coming Soon!</p>  <!-- Setting the caption for the image -->
+            </div>
+            <div class= "imageHolder">                                     <!-- Creating of the imageHolder -->
+                <img class="img-fluid" src = "../images/slideshow2.jpg">                     <!-- Setting the selected image for fifth imageHolder -->
+                <p class = "captionText">Blue diffERENTE</p>               <!-- Setting the caption for the image -->
+            </div>
+        </div>
+        <div id="dotsContainer"></div>                                     <!-- Creating the dotsContainer -->
+    </div>
+
+    <div class="intrend_container"></div>                                  <!-- Intrend containers-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">                      <!-- Setting 3col / 2col / 1col -->
+                <div class="card">                                         <!-- Creating a card which acts as a container-->
+                    <img class="intrend_img img-fluid" src="../images/intrend1.jpg" alt="Intrend1">     <!-- Setting the image -->
+                    <h1 class="shoename">Nike&reg; SB Youth Janoski</h1>                                <!-- Setting the name of the shoe -->
+                    <p class="price">$89.00</p>                                                         <!-- Setting the price of the shoe -->
+                    <p class="desc">A retro but timeless design. With a lace-up closure for a snug fit, it's prefect for the everyday use.</p>     <!-- Setting the description of the shoe -->
+                    <p><button>Add to Cart</button></p>                                                 <!-- Adding a "Add to Cart" button -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="intrend_img img-fluid" src="../images/intrend2.jpg" alt="Intrend2">
+                    <h1 class="shoename">Flyknit Air Max</h1>
+                    <p class="price">$120.00</p>
+                    <p class="desc">A bright and poping design, for those who dare. With a lightweight construction for maximum comfort.</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="intrend_img img-fluid" src="../images/intrend3.jpg" alt="Intrend3">
+                    <h1 class="shoename">Nike&reg; Air Force One</h1>
+                    <p class="price">$250.00</p>
+                    <p class="desc">The legend lives on in the Nike Air Force 1 '07, a modern take on the iconic AF-1 that blends classic style and fresh details.</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer> <!-- Footer -->
+        Please sign up for our newsletter.
+        <div class="form"> <!-- Text Box-->
+            <label class="email">Email:</label>
+            <input class="email2" placeholder="example@email.com"/>
+            <button class="submit2">Submit</button>
+        </div>
+    </footer>
+</div>
+<script src="../script/slide.js"></script>
+</body>
+
+</html>
